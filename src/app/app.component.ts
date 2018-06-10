@@ -7,5 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'earworm';
-  showflag ='false';
+  showflag = false;
+
+  listenForSong(event) {
+    this.showflag = !this.showflag;
+    //Convert speech to text
+    //Search for the song associated with the text
+    //Return song options
+    //Play song on spotify
+  }
 }

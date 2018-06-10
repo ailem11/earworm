@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Song } from '../song'
+import { Component, OnInit, Input } from '@angular/core';
+import { Song } from '../song';
 @Component({
   selector: 'app-songlistener',
   templateUrl: './songlistener.component.html',
@@ -12,10 +12,9 @@ export class SonglistenerComponent implements OnInit {
     lyrics: 'On top the world',
     show: false
   }
-  @input() showflag?: boolean;
+  @Input() showflag: boolean;
   constructor() { }
 
   ngOnInit() {
   }
-
 }

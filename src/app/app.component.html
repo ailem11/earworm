@@ -3,8 +3,8 @@
   <h1>
     Welcome to {{ title }}!
   </h1>
-  <img width="300" alt="Listen" src="assets/Headphone.svg" ng-click="showflag=!showflag">
-  <app-songlistener [showflag]="false" cng-show="showflag"></app-songlistener>
+  <img width="300" alt="Listen" src="assets/images/Headphone.svg" (click)="listenForSong($event)">
+  <app-songlistener [showflag]=showflag></app-songlistener>
 </div>
 <h2>Here are some links to help you start: </h2>
 <ul>
