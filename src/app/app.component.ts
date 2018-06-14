@@ -12,6 +12,7 @@ export class AppComponent {
   listenForSong(event) {
     this.showflag = !this.showflag;
     //Convert speech to text
+    SpeechToTextAPIService.listen
     //Search for the song associated with the text
     //Return song options
     //Play song on spotify
